@@ -1,0 +1,163 @@
+body {
+  background: linear-gradient(180deg, white, rgb(94, 94, 239));
+}
+
+.top-section {
+  height: 290px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.bizz-card {
+  height: 60%;
+  width: 90%;
+  margin-left: 16px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  border: 1px solid black;
+  margin-top: 30px;
+}
+
+.bizz-card:hover > .card {
+  cursor: pointer;
+  transform: rotateY(180deg);
+}
+
+.front,
+.back {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  background-color: white;
+}
+
+.front {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.photo {
+  height: 174px;
+  width: 98%;
+  margin-bottom: -4px;
+}
+
+.name-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1;
+}
+
+.name,
+.bizz-title,
+.contact-line {
+  text-align: center;
+}
+
+.name {
+  font-family: Helvetica;
+}
+
+.back {
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact {
+  text-align: center;
+}
+
+.about-me {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.about-para {
+  text-align: justify;
+  margin-right: 12px;
+}
+
+.skills-title {
+  margin-left: 28px;
+  text-decoration: underline;
+}
+
+.about-bullets {
+  text-align: justify;
+}
+
+.attention-point {
+  margin-left: -20px;
+  margin-right: 8px;
+}
+
+/* MIDDLE */
+
+.middle-section {
+  height: 500px;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+}
+
+.title {
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: -8px;
+}
+
+.past {
+  display: flex;
+  flex-direction: column;
+}
+
+.studies,
+.work {
+  margin-bottom: -10px;
+  margin-left: 20px;
+}
+
+/* BOTTOM */
+
+.bottom-section {
+  height: 300px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.para {
+  text-align: justify;
+  font-size: 16px;
+  margin-bottom: -16px;
+  padding: 8px;
+}
+
+.link,
+.link:active {
+  color: white;
+  font-size: 20px;
+  padding: 8px;
+}
+
+.link:hover {
+  color: lime;
+}
+
+.pick-me-para {
+  padding-left: 16px;
+  padding-right: 8px;
+}
